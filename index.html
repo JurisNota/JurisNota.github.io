@@ -290,10 +290,6 @@
         const adminTroublemakersSection = document.getElementById('admin-troublemakers-section');
         const adminCommentsList = document.getElementById('admin-comments-list');
         const adminTroublemakersList = document.getElementById('admin-troublemakers-list');
-        const infoPopupOverlay = document.getElementById('info-popup-overlay');
-        const closePopupBtn = document.getElementById('close-popup-btn');
-
-        const body = document.body;
 
         let userId = null;
         let allNotes = [];
@@ -364,9 +360,6 @@
                 "..."
             ]
         };
-        
-        // Pop-up logic
-        // We will move this to a function that runs after the page has loaded
         
         // Authentication state listener
         onAuthStateChanged(auth, async (user) => {
