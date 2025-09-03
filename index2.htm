@@ -1,0 +1,2326 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=DE style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;!DOCTYPE html&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;html lang=&quot;fr&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    </span><span lang=FR>&lt;title&gt;JurisNota
+- Le Blog des Étudiants&lt;/title&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    </span><span lang=EN-GB>&lt;script
+src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    </span><span lang=FR>&lt;style&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        body {</span></p>
+
+<p class=MsoNormal><span lang=FR>            font-family: 'Inter', sans-serif;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        .rating-scale {</span></p>
+
+<p class=MsoNormal><span lang=FR>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=FR>            justify-content: space-between;</span></p>
+
+<p class=MsoNormal><span lang=FR>            align-items: center;</span></p>
+
+<p class=MsoNormal><span lang=FR>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            padding: 0 10px;</span></p>
+
+<p class=MsoNormal><span lang=FR>            position: relative;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        .rating-line {</span></p>
+
+<p class=MsoNormal><span lang=FR>            position: absolute;</span></p>
+
+<p class=MsoNormal><span lang=FR>            left: 0;</span></p>
+
+<p class=MsoNormal><span lang=FR>            top: 50%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            transform: translateY(-50%);</span></p>
+
+<p class=MsoNormal><span lang=FR>            height: 4px;</span></p>
+
+<p class=MsoNormal><span lang=FR>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            background-color: #e5e7eb;</span></p>
+
+<p class=MsoNormal><span lang=FR>            border-radius: 2px;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        .rating-point {</span></p>
+
+<p class=MsoNormal><span lang=FR>            width: 24px;</span></p>
+
+<p class=MsoNormal><span lang=FR>            height: 24px;</span></p>
+
+<p class=MsoNormal><span lang=FR>            background-color: #d1d5db;</span></p>
+
+<p class=MsoNormal><span lang=FR>            border-radius: 50%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=FR>            align-items: center;</span></p>
+
+<p class=MsoNormal><span lang=FR>            justify-content: center;</span></p>
+
+<p class=MsoNormal><span lang=FR>            font-size: 12px;</span></p>
+
+<p class=MsoNormal><span lang=FR>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=FR>            color: #4b5563;</span></p>
+
+<p class=MsoNormal><span lang=FR>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=FR>            z-index: 10;</span></p>
+
+<p class=MsoNormal><span lang=FR>            transition: all 0.2s ease-in-out;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        .rating-point.selected {</span></p>
+
+<p class=MsoNormal><span lang=FR>            background-color: #10b981;</span></p>
+
+<p class=MsoNormal><span lang=FR>            color: white;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        #info-popup {</span></p>
+
+<p class=MsoNormal><span lang=FR>            position: fixed;</span></p>
+
+<p class=MsoNormal><span lang=FR>            top: 50%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            left: 50%;</span></p>
+
+<p class=MsoNormal><span lang=FR>            transform: translate(-50%, -50%);</span></p>
+
+<p class=MsoNormal><span lang=FR>            z-index: 50;</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;/style&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&lt;body class=&quot;bg-gray-100 flex flex-col
+items-center justify-center min-h-screen&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;!-- Info Pop-up --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;div id=&quot;info-popup&quot;
+class=&quot;bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-sm w-full
+text-center&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;h2 class=&quot;text-2xl font-bold
+text-gray-800 mb-4&quot;&gt;Bienvenue sur JurisNota&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;p class=&quot;text-sm
+text-gray-600 mb-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            Ce site est anonyme. Nous ne
+collectons aucune donnée sur vous, à l'exception des notes et des commentaires
+que vous postez. Vos droits RGPD sont respectés, et vous pouvez à tout moment
+demander la suppression de votre contenu. En utilisant ce site, vous vous
+engagez à rester bienveillant. Tout commentaire insultant sera supprimé. Votre
+témoignage se doit d'être fidèle à la réalité. Votre adresse mail est demandée
+afin de pouvoir vous répondre efficacement. Elle sera supprimée dès qu'une réponse
+vous sera envoyée.</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;button
+id=&quot;close-popup-btn&quot; class=&quot;bg-green-500 text-white
+font-semibold py-2 px-6 rounded-full hover:bg-green-600 transition-colors
+duration-300 shadow-lg&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            J'ai compris !</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;!-- Main Content --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;div id=&quot;main-content&quot;
+class=&quot;hidden flex flex-col items-center justify-center min-h-screen
+w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;header class=&quot;text-center
+my-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;h1 class=&quot;text-5xl
+md:text-6xl font-extrabold text-green-800 mb-2&quot;&gt;JurisNota&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;p class=&quot;text-md
+text-gray-600&quot;&gt;Note tes cours - aide les autres&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/header&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section class=&quot;bg-white
+rounded-2xl shadow-lg p-6 md:p-8 my-8 text-center max-w-xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;p class=&quot;text-3xl
+text-gray-800 font-bold&quot;&gt;Par les étudiants, pour les
+étudiants...&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;p class=&quot;text-sm
+text-gray-600&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;span
+class=&quot;font-bold&quot;&gt;Pourquoi JurisNota ?&lt;/span&gt; JurisNota est
+un espace collaboratif pour les étudiants en droit. L'objectif est de
+s'entraider en partageant des avis, des conseils et des notes sur les cours.
+Marre d'être constamment noté ? Sois l'acteur de l'information étudiante !</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;main class=&quot;container mx-auto
+p-4 md:p-8 max-w-xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;section
+id=&quot;level-selection-section&quot; class=&quot;bg-white rounded-2xl
+shadow-lg p-6 md:p-8 my-8 text-center&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h2
+id=&quot;main-title&quot; class=&quot;text-3xl italic text-gray-800
+mb-6&quot;&gt;Sélectionnez votre année&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                </span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div
+id=&quot;level-selector&quot; class=&quot;flex flex-col items-center space-y-4
+mb-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;button
+class=&quot;level-button w-full bg-green-500 text-white font-semibold py-2 px-6
+rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg&quot;
+data-level=&quot;L1&quot;&gt;L1&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;button
+class=&quot;level-button w-full bg-green-500 text-white font-semibold py-2 px-6
+rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg&quot;
+data-level=&quot;L2&quot;&gt;L2&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;button
+class=&quot;level-button w-full bg-green-500 text-white font-semibold py-2 px-6
+rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg&quot;
+data-level=&quot;L3&quot;&gt;L3&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/main&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section
+id=&quot;course-section&quot; class=&quot;bg-white rounded-2xl shadow-lg p-6
+md:p-8 my-8 hidden max-w-xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;h2 id=&quot;course-title&quot;
+class=&quot;text-3xl font-bold text-gray-800 mb-2&quot;&gt;&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;flex
+items-center justify-center text-xl text-gray-600 mb-6&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;span
+class=&quot;font-semibold mr-2&quot;&gt;Note moyenne :&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;span
+id=&quot;average-rating&quot; class=&quot;font-bold&quot;&gt;0&lt;/span&gt; /
+10</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;bg-gray-50
+rounded-lg p-4 mb-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h3 class=&quot;text-xl
+font-semibold text-gray-800 mb-4&quot;&gt;Laisser une note et un
+commentaire&lt;/h3&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;form
+id=&quot;rating-form&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;div
+class=&quot;mb-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;label
+class=&quot;block text-gray-700 font-medium mb-2&quot;&gt;Votre note (1-10) :
+&lt;span class=&quot;text-red-500&quot;&gt;*&lt;/span&gt;&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;div
+id=&quot;rating-scale&quot; class=&quot;rating-scale relative my-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;div
+class=&quot;rating-line&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;div
+class=&quot;mb-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;label
+for=&quot;comment-input&quot; class=&quot;block text-gray-700 font-medium
+mb-2&quot;&gt;Votre commentaire : &lt;span
+class=&quot;text-red-500&quot;&gt;*&lt;/span&gt;&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;textarea
+id=&quot;comment-input&quot; name=&quot;comment&quot; rows=&quot;4&quot;
+required</span></p>
+
+<p class=MsoNormal><span lang=FR>                                 
+class=&quot;w-full px-4 py-2 border border-gray-300 rounded-lg
+focus:outline-none focus:ring-2 focus:ring-green-500&quot;&gt;&lt;/textarea&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;button
+type=&quot;submit&quot; class=&quot;bg-green-500 text-white font-semibold py-2
+px-6 rounded-full hover:bg-green-600 transition-colors duration-300
+shadow-lg&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        Publier</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/form&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div
+id=&quot;comments-section&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h3 class=&quot;text-xl
+font-semibold text-gray-800 mb-4&quot;&gt;Commentaires&lt;/h3&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div
+id=&quot;comments-list&quot; class=&quot;space-y-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;button
+id=&quot;back-from-course&quot; class=&quot;mt-8 bg-gray-200 text-gray-800
+font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors
+duration-300&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                Retour aux années</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;!-- Contact Form Section --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section
+id=&quot;contact-form-section&quot; class=&quot;bg-white rounded-2xl shadow-lg
+p-6 md:p-8 my-8 hidden max-w-xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;h2 class=&quot;text-3xl
+font-bold text-gray-800 mb-6&quot;&gt;Formulaire de contact&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;form
+id=&quot;contact-form&quot; class=&quot;space-y-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;label
+for=&quot;contact-topic&quot; class=&quot;block text-gray-700 font-medium
+mb-2&quot;&gt;Objet de la demande : &lt;span
+class=&quot;text-red-500&quot;&gt;*&lt;/span&gt;&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;select
+id=&quot;contact-topic&quot; name=&quot;topic&quot; required</span></p>
+
+<p class=MsoNormal><span lang=FR>                            class=&quot;w-full
+px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+focus:ring-green-500&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;option
+value=&quot;&quot; disabled selected&gt;-- Sélectionnez un sujet
+--&lt;/option&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;option
+value=&quot;Suppression de commentaire&quot;&gt;Suppression de
+commentaire&lt;/option&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;option
+value=&quot;Demande autre&quot;&gt;Demande autre&lt;/option&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/select&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;label
+for=&quot;contact-message&quot; class=&quot;block text-gray-700 font-medium
+mb-2&quot;&gt;Développez votre demande : &lt;span
+class=&quot;text-red-500&quot;&gt;*&lt;/span&gt;&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;textarea
+id=&quot;contact-message&quot; name=&quot;message&quot; rows=&quot;4&quot;
+required</span></p>
+
+<p class=MsoNormal><span lang=FR>                             
+class=&quot;w-full px-4 py-2 border border-gray-300 rounded-lg
+focus:outline-none focus:ring-2 focus:ring-green-500&quot;&gt;&lt;/textarea&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;label
+for=&quot;contact-email&quot; class=&quot;block text-gray-700 font-medium
+mb-2&quot;&gt;Votre adresse mail : &lt;span
+class=&quot;text-red-500&quot;&gt;*&lt;/span&gt;&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;input
+type=&quot;email&quot; id=&quot;contact-email&quot; name=&quot;email&quot;
+required</span></p>
+
+<p class=MsoNormal><span lang=FR>                           class=&quot;w-full
+px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+focus:ring-green-500&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+type=&quot;submit&quot; id=&quot;submit-contact-form&quot; disabled</span></p>
+
+<p class=MsoNormal><span lang=FR>                        class=&quot;w-full
+bg-gray-400 text-white font-semibold py-2 px-6 rounded-full
+cursor-not-allowed&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    Envoyer la demande</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/form&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;button
+id=&quot;back-from-contact&quot; class=&quot;mt-8 bg-gray-200 text-gray-800
+font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors
+duration-300&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                Retour à la page principale</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div
+id=&quot;contact-message-status&quot; class=&quot;mt-4
+text-center&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;!-- Contact Success Section --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section
+id=&quot;contact-success-section&quot; class=&quot;bg-white rounded-2xl
+shadow-lg p-6 md:p-8 my-8 hidden max-w-xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;text-center
+p-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h2 class=&quot;text-2xl
+font-bold text-gray-800 mb-4&quot;&gt;Demande envoyée !&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;p
+class=&quot;text-gray-600&quot;&gt;Nous te remercions de ta demande ! Tu
+recevras une réponse dans un court délai.&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+id=&quot;back-from-contact-success&quot; class=&quot;mt-8 bg-green-500
+text-white font-semibold py-2 px-6 rounded-full hover:bg-green-600
+transition-colors duration-300&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    Retour à la page
+principale</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;!-- Admin Section (hidden by
+default) --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section
+id=&quot;admin-section&quot; class=&quot;bg-white rounded-2xl shadow-lg p-6
+md:p-8 my-8 hidden max-w-xl w-full text-center&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;h2 class=&quot;text-3xl
+font-bold text-gray-800 mb-6&quot;&gt;Connexion Admin&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;form id=&quot;admin-form&quot;
+class=&quot;space-y-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;label
+for=&quot;admin-password&quot; class=&quot;block text-gray-700 font-medium
+mb-2&quot;&gt;Mot de passe&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;input
+type=&quot;password&quot; id=&quot;admin-password&quot;
+name=&quot;password&quot; required</span></p>
+
+<p class=MsoNormal><span lang=FR>                           class=&quot;w-full
+px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+focus:ring-green-500 text-center&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+type=&quot;submit&quot; class=&quot;bg-green-500 text-white font-semibold py-2
+px-6 rounded-full hover:bg-green-600 transition-colors duration-300
+shadow-lg&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    Se connecter</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div
+id=&quot;admin-message&quot; class=&quot;text-red-500 mt-2
+hidden&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/form&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;button
+id=&quot;back-from-admin&quot; class=&quot;mt-8 bg-gray-200 text-gray-800
+font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors
+duration-300&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                Retour à la page principale</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;!-- Admin Dashboard Section
+(hidden by default) --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;section
+id=&quot;admin-dashboard-section&quot; class=&quot;bg-white rounded-2xl
+shadow-lg p-6 md:p-8 my-8 hidden max-w-2xl w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;flex
+justify-between items-center mb-6&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h2 class=&quot;text-3xl
+font-bold text-gray-800&quot;&gt;Tableau de bord Admin&lt;/h2&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+id=&quot;back-from-admin-dashboard&quot; class=&quot;bg-gray-200 text-gray-800
+font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors
+duration-300&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    Déconnexion</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;flex
+justify-center space-x-4 mb-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+id=&quot;show-comments-tab&quot; class=&quot;px-6 py-2 rounded-full
+font-semibold bg-green-500 text-white hover:bg-green-600 transition-colors
+duration-300&quot;&gt;Commentaires&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;button
+id=&quot;show-troublemakers-tab&quot; class=&quot;px-6 py-2 rounded-full
+font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors
+duration-300&quot;&gt;Gens casse couilles&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div
+id=&quot;admin-comments-section&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h3 class=&quot;text-xl
+font-bold text-gray-800 mb-4&quot;&gt;Tous les commentaires&lt;/h3&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div
+id=&quot;admin-comments-list&quot; class=&quot;space-y-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;!-- Comments will be
+dynamically inserted here --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div
+id=&quot;admin-troublemakers-section&quot; class=&quot;hidden&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;h3 class=&quot;text-xl
+font-bold text-gray-800 mb-4&quot;&gt;Demandes de contact&lt;/h3&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;div
+id=&quot;admin-troublemakers-list&quot; class=&quot;space-y-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;!-- Contact
+submissions will be dynamically inserted here --&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/section&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;footer class=&quot;bg-gray-800
+text-white py-8 rounded-t-xl mt-8 w-full&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;div class=&quot;container mx-auto
+text-center&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;div class=&quot;flex
+justify-center space-x-6 mb-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;a href=&quot;#&quot;
+id=&quot;admin-link&quot; class=&quot;text-gray-400 hover:text-white
+transition-colors duration-300&quot;&gt;Admin&lt;/a&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                &lt;a href=&quot;#&quot;
+id=&quot;contact-link&quot; class=&quot;text-gray-400 hover:text-white
+transition-colors duration-300&quot;&gt;Formulaire de contact&lt;/a&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>            &lt;p&gt;&amp;copy; 2024
+JurisNota. Tous droits réservés.&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;/footer&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;script type=&quot;module&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>        import { initializeApp } from
+&quot;https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>        import { getAuth, signInAnonymously,
+signInWithCustomToken, onAuthStateChanged } from
+&quot;https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>        import { getFirestore, collection,
+onSnapshot, query, addDoc, doc, deleteDoc } from
+&quot;https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>        import { setLogLevel } from
+&quot;https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Set log level for debugging</span></p>
+
+<p class=MsoNormal><span lang=FR>        setLogLevel('debug');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Retrieve global variables</span></p>
+
+<p class=MsoNormal><span lang=FR>        const appId = typeof __app_id !==
+'undefined' ? __app_id : 'default-app-id';</span></p>
+
+<p class=MsoNormal><span lang=FR>        const firebaseConfig = typeof
+__firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};</span></p>
+
+<p class=MsoNormal><span lang=FR>        const initialAuthToken = typeof
+__initial_auth_token !== 'undefined' ? __initial_auth_token : null;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Initialize Firebase</span></p>
+
+<p class=MsoNormal><span lang=FR>        const app =
+initializeApp(firebaseConfig);</span></p>
+
+<p class=MsoNormal><span lang=FR>        const db = getFirestore(app);</span></p>
+
+<p class=MsoNormal><span lang=FR>        const auth = getAuth(app);</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Get DOM elements</span></p>
+
+<p class=MsoNormal><span lang=FR>        const levelSelectorSection =
+document.getElementById('level-selection-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const mainTitle =
+document.getElementById('main-title');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const levelSelector =
+document.getElementById('level-selector');</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        const courseSection =
+document.getElementById('course-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const courseTitle =
+document.getElementById('course-title');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const averageRatingSpan =
+document.getElementById('average-rating');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const ratingForm =
+document.getElementById('rating-form');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const ratingScale =
+document.getElementById('rating-scale');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const commentInput =
+document.getElementById('comment-input');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const commentsList =
+document.getElementById('comments-list');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const backFromCourseButton =
+document.getElementById('back-from-course');</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactFormSection =
+document.getElementById('contact-form-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactLink =
+document.getElementById('contact-link');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactForm =
+document.getElementById('contact-form');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactMessageStatus =
+document.getElementById('contact-message-status');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const backFromContactButton =
+document.getElementById('back-from-contact');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactTopicInput =
+document.getElementById('contact-topic');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactMessageInput =
+document.getElementById('contact-message');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactEmailInput =
+document.getElementById('contact-email');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const submitContactFormButton =
+document.getElementById('submit-contact-form');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const contactSuccessSection =
+document.getElementById('contact-success-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminSection =
+document.getElementById('admin-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminDashboardSection =
+document.getElementById('admin-dashboard-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminLink =
+document.getElementById('admin-link');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminForm =
+document.getElementById('admin-form');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminPasswordInput =
+document.getElementById('admin-password');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminMessageDiv =
+document.getElementById('admin-message');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const backFromAdminButton =
+document.getElementById('back-from-admin');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const backFromAdminDashboardButton =
+document.getElementById('back-from-admin-dashboard');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        const showCommentsTab =
+document.getElementById('show-comments-tab');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const showTroublemakersTab =
+document.getElementById('show-troublemakers-tab');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminCommentsSection =
+document.getElementById('admin-comments-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminTroublemakersSection =
+document.getElementById('admin-troublemakers-section');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminCommentsList =
+document.getElementById('admin-comments-list');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const adminTroublemakersList =
+document.getElementById('admin-troublemakers-list');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        const popup =
+document.getElementById('info-popup');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const closePopupBtn =
+document.getElementById('close-popup-btn');</span></p>
+
+<p class=MsoNormal><span lang=FR>        const mainContent =
+document.getElementById('main-content');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        let userId = null;</span></p>
+
+<p class=MsoNormal><span lang=FR>        let allNotes = [];</span></p>
+
+<p class=MsoNormal><span lang=FR>        let allContactSubmissions = [];</span></p>
+
+<p class=MsoNormal><span lang=FR>        let currentCourseTitle = null;</span></p>
+
+<p class=MsoNormal><span lang=FR>        let currentLevel = null;</span></p>
+
+<p class=MsoNormal><span lang=FR>        let selectedRating = null;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Static course data</span></p>
+
+<p class=MsoNormal><span lang=FR>        const staticCourses = {</span></p>
+
+<p class=MsoNormal><span lang=FR>            &quot;L1&quot;: [</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit privé et théorie
+générale du droit&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit constitutionnel
+1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Histoire du droit et des
+institutions publiques&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Économie
+politique&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Institutions
+judiciaires&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit constitutionnel
+2&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit de la
+famille&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Institutions
+administratives&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Relations
+internationales&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Macroéconomie&quot;</span></p>
+
+<p class=MsoNormal><span lang=FR>            ],</span></p>
+
+<p class=MsoNormal><span lang=FR>            &quot;L2&quot;: [</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des obligations
+1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit administratif
+1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit institutionnel de
+l'Union européenne&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit processuel&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Finances
+publiques&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Grands systèmes
+juridiques&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Histoire du droit des
+obligations&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Introduction to the
+English Legal System &quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des obligations
+2&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit administratif
+2&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Contrats spéciaux&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit commercial&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des politiques et
+actions de l'Union Européenne&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Histoire de l'Etat et
+des grands services publics&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Introduction to UK
+Public Law&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Vie politique
+contemporaine&quot;</span></p>
+
+<p class=MsoNormal><span lang=FR>            ],</span></p>
+
+<p class=MsoNormal><span lang=FR>            &quot;L3&quot;: [</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des obligations
+3&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des sociétés
+1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit du travail
+1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit pénal&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Libertés
+publiques&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit de la
+responsabilité administrative&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Introduction au droit
+international&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;English Tort Law&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit allemand
+approfondi 1&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des cultes et des
+religions&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Philosophie du
+droit&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des biens&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Procédure civile&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des sociétés
+2&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit des sûretés&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Procédure pénale&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit du travail
+2&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Système juridique de
+l'Union Européenne&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit administratif des
+biens&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit fiscal&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Droit de la fonction
+publique&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Comptabilité&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;English Contract
+Law&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Histoire de la propriété
+en Europe&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;Histoire du droit privé
+allemand&quot;,</span></p>
+
+<p class=MsoNormal><span lang=FR>                &quot;...&quot;</span></p>
+
+<p class=MsoNormal><span lang=FR>            ]</span></p>
+
+<p class=MsoNormal><span lang=FR>        };</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Pop-up logic</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+closePopupBtn.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            popup.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainContent.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Authentication state listener</span></p>
+
+<p class=MsoNormal><span lang=FR>        onAuthStateChanged(auth, async (user)
+=&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (user) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                userId = user.uid;</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;User signed
+in with ID:&quot;, userId);</span></p>
+
+<p class=MsoNormal><span lang=FR>                setupFirestoreListeners();</span></p>
+
+<p class=MsoNormal><span lang=FR>            } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;No user,
+signing in...&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                try {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    if (initialAuthToken) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        await
+signInWithCustomToken(auth, initialAuthToken);</span></p>
+
+<p class=MsoNormal><span lang=FR>                       
+console.log(&quot;Custom token sign-in successful.&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                    } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        await
+signInAnonymously(auth);</span></p>
+
+<p class=MsoNormal><span lang=FR>                       
+console.log(&quot;Anonymous sign-in successful.&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                    }</span></p>
+
+<p class=MsoNormal><span lang=FR>                } catch (error) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+console.error(&quot;Sign-in error:&quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        function setupFirestoreListeners() {</span></p>
+
+<p class=MsoNormal><span lang=FR>            // Listener for course comments</span></p>
+
+<p class=MsoNormal><span lang=FR>            const commentsCollectionPath =
+`artifacts/${appId}/public/data/comments`;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const commentsCollectionRef =
+collection(db, commentsCollectionPath);</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+onSnapshot(query(commentsCollectionRef), (snapshot) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                allNotes = [];</span></p>
+
+<p class=MsoNormal><span lang=FR>                snapshot.forEach((doc) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    allNotes.push({ id:
+doc.id, ...doc.data() });</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;Notes
+loaded:&quot;, allNotes.length);</span></p>
+
+<p class=MsoNormal><span lang=FR>                if (currentCourseTitle) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+displayCourseDetails(currentLevel, currentCourseTitle);</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>                displayAdminDashboard();</span></p>
+
+<p class=MsoNormal><span lang=FR>            }, (error) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+fetching notes:&quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            // Listener for contact
+submissions</span></p>
+
+<p class=MsoNormal><span lang=FR>            const contactCollectionPath =
+`artifacts/${appId}/public/data/contact_submissions`;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const contactCollectionRef =
+collection(db, contactCollectionPath);</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+onSnapshot(query(contactCollectionRef), (snapshot) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                allContactSubmissions = [];</span></p>
+
+<p class=MsoNormal><span lang=FR>                snapshot.forEach((doc) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+allContactSubmissions.push({ id: doc.id, ...doc.data() });</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;Contact
+submissions loaded:&quot;, allContactSubmissions.length);</span></p>
+
+<p class=MsoNormal><span lang=FR>                displayAdminDashboard();</span></p>
+
+<p class=MsoNormal><span lang=FR>            }, (error) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+fetching contact submissions:&quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        // Populate year buttons with
+click-to-open dropdowns</span></p>
+
+<p class=MsoNormal><span lang=FR>        function populateLevelButtons() {</span></p>
+
+<p class=MsoNormal><span lang=FR>            levelSelector.innerHTML = '';</span></p>
+
+<p class=MsoNormal><span lang=FR>            const levels = ['L1', 'L2', 'L3'];</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            levels.forEach(level =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const levelContainer =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                levelContainer.className =
+'relative w-full';</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>                const levelButton =
+document.createElement('button');</span></p>
+
+<p class=MsoNormal><span lang=FR>                levelButton.className =
+'level-button w-full bg-green-500 text-white font-semibold py-2 px-6
+rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg';</span></p>
+
+<p class=MsoNormal><span lang=FR>                levelButton.textContent =
+level;</span></p>
+
+<p class=MsoNormal><span lang=FR>                levelButton.dataset.level =
+level;</span></p>
+
+<p class=MsoNormal><span lang=FR>                </span></p>
+
+<p class=MsoNormal><span lang=FR>                const dropdownList =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                dropdownList.className =
+'course-list-dropdown absolute z-10 bg-white shadow-lg rounded-xl p-4 mt-2
+w-full text-left max-h-60 overflow-y-auto hidden';</span></p>
+
+<p class=MsoNormal><span lang=FR>                </span></p>
+
+<p class=MsoNormal><span lang=FR>                const courses =
+staticCourses[level] || [];</span></p>
+
+<p class=MsoNormal><span lang=FR>                if (courses.length &gt; 0) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+courses.forEach(courseTitle =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        const courseButton =
+document.createElement('button');</span></p>
+
+<p class=MsoNormal><span lang=FR>                        courseButton.className
+= 'block w-full text-left py-2 px-4 rounded-lg hover:bg-gray-100
+transition-colors duration-200';</span></p>
+
+<p class=MsoNormal><span lang=FR>                       
+courseButton.textContent = courseTitle;</span></p>
+
+<p class=MsoNormal><span lang=FR>                       
+courseButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                            currentLevel =
+level;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            currentCourseTitle
+= courseTitle;</span></p>
+
+<p class=MsoNormal><span lang=FR>                           
+displayCourseDetails(level, courseTitle);</span></p>
+
+<p class=MsoNormal><span lang=FR>                        });</span></p>
+
+<p class=MsoNormal><span lang=FR>                       
+dropdownList.appendChild(courseButton);</span></p>
+
+<p class=MsoNormal><span lang=FR>                    });</span></p>
+
+<p class=MsoNormal><span lang=FR>                } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    const noCourseMessage =
+document.createElement('p');</span></p>
+
+<p class=MsoNormal><span lang=FR>                    noCourseMessage.className
+= 'text-sm text-gray-500 p-2';</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+noCourseMessage.textContent = 'Aucun cours disponible.';</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+dropdownList.appendChild(noCourseMessage);</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+levelButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    // Hide all other
+dropdowns</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+document.querySelectorAll('.course-list-dropdown').forEach(dd =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        if (dd !==
+dropdownList) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                           
+dd.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>                        }</span></p>
+
+<p class=MsoNormal><span lang=FR>                    });</span></p>
+
+<p class=MsoNormal><span lang=FR>                    // Toggle the current
+dropdown's visibility</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+dropdownList.classList.toggle('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+levelContainer.appendChild(levelButton);</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+levelContainer.appendChild(dropdownList);</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+levelSelector.appendChild(levelContainer);</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        function displayCourseDetails(level,
+title) {</span></p>
+
+<p class=MsoNormal><span lang=FR>            mainTitle.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+courseSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            courseTitle.textContent = title;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const filteredComments =
+allNotes.filter(note =&gt; note.level === level &amp;&amp; note.courseTitle ===
+title);</span></p>
+
+<p class=MsoNormal><span lang=FR>            const totalRating =
+filteredComments.reduce((sum, note) =&gt; sum + parseInt(note.rating, 10), 0);</span></p>
+
+<p class=MsoNormal><span lang=FR>            const averageRating =
+filteredComments.length &gt; 0 ? (totalRating /
+filteredComments.length).toFixed(1) : 0;</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            let avgRatingColorClass =
+'text-green-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (averageRating &gt;= 0
+&amp;&amp; averageRating &lt;= 4) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                avgRatingColorClass =
+'text-red-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>            } else if (averageRating &gt; 4
+&amp;&amp; averageRating &lt;= 7) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                avgRatingColorClass =
+'text-orange-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>            averageRatingSpan.textContent =
+averageRating;</span></p>
+
+<p class=MsoNormal><span lang=FR>            averageRatingSpan.className =
+`font-bold ${avgRatingColorClass}`;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            commentsList.innerHTML = '';</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (filteredComments.length === 0)
+{</span></p>
+
+<p class=MsoNormal><span lang=FR>                commentsList.innerHTML =
+'&lt;p class=&quot;text-center text-gray-500&quot;&gt;Soyez le premier à noter
+ce cours !&lt;/p&gt;';</span></p>
+
+<p class=MsoNormal><span lang=FR>            } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                filteredComments.sort((a, b)
+=&gt; b.createdAt - a.createdAt).forEach(comment =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    const commentElement =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                    let colorClass =
+'text-green-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    if (comment.rating &gt;= 0
+&amp;&amp; comment.rating &lt;= 4) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        colorClass =
+'text-red-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    } else if (comment.rating
+&gt; 4 &amp;&amp; comment.rating &lt;= 7) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        colorClass =
+'text-orange-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    commentElement.className =
+'bg-gray-100 rounded-xl p-4 shadow-sm';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    commentElement.innerHTML =
+`</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;div
+class=&quot;flex items-center justify-between mb-2&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;span
+class=&quot;font-semibold ${colorClass}&quot;&gt;Note: ${comment.rating} /
+10&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;span
+class=&quot;text-sm text-gray-500&quot;&gt;Par: ${comment.userId.substring(0,
+8)}...&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;p
+class=&quot;text-gray-700&quot;&gt;${comment.comment}&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    `;</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+commentsList.appendChild(commentElement);</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Add rating and comment to Firestore</span></p>
+
+<p class=MsoNormal><span lang=FR>        ratingForm.addEventListener('submit',
+async (e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            e.preventDefault();</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            if (selectedRating === null) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Veuillez
+sélectionner une note.&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                return;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const comment =
+commentInput.value;</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            if (!userId) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;User not
+authenticated.&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                return;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (!currentCourseTitle ||
+!currentLevel) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;No course
+selected.&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>                return;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            try {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const commentsCollectionPath =
+`artifacts/${appId}/public/data/comments`;</span></p>
+
+<p class=MsoNormal><span lang=FR>                await addDoc(collection(db,
+commentsCollectionPath), {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    userId: userId,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    level: currentLevel,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    courseTitle:
+currentCourseTitle,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    rating: selectedRating,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    comment: comment,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    createdAt: Date.now()</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>                selectedRating = null;</span></p>
+
+<p class=MsoNormal><span lang=FR>                commentInput.value = '';</span></p>
+
+<p class=MsoNormal><span lang=FR>                updateRatingScale();</span></p>
+
+<p class=MsoNormal><span lang=FR>            } catch (error) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+adding document:&quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Handle back button clicks</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+backFromCourseButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+courseSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainTitle.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Contact form logic</span></p>
+
+<p class=MsoNormal><span lang=FR>        contactLink.addEventListener('click',
+(e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            e.preventDefault();</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+courseSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminDashboardSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactFormSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactSuccessSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>       
+backFromContactButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactFormSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainTitle.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        contactForm.addEventListener('input',
+() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            const isFilled =
+contactTopicInput.value !== '' &amp;&amp; contactMessageInput.value !== ''
+&amp;&amp; contactEmailInput.value !== '';</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (isFilled) {</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.disabled = false;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.remove('bg-gray-400', 'cursor-not-allowed');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.add('bg-green-500', 'hover:bg-green-600');</span></p>
+
+<p class=MsoNormal><span lang=FR>            } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.disabled = true;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.add('bg-gray-400', 'cursor-not-allowed');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.remove('bg-green-500', 'hover:bg-green-600');</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        contactForm.addEventListener('submit',
+async (e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            e.preventDefault();</span></p>
+
+<p class=MsoNormal><span lang=FR>            const topic =
+contactTopicInput.value;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const message =
+contactMessageInput.value;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const email =
+contactEmailInput.value;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            try {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const contactCollectionPath =
+`artifacts/${appId}/public/data/contact_submissions`;</span></p>
+
+<p class=MsoNormal><span lang=FR>                await addDoc(collection(db,
+contactCollectionPath), {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    topic,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    message,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    email,</span></p>
+
+<p class=MsoNormal><span lang=FR>                    createdAt: Date.now()</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+contactFormSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+contactSuccessSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>                contactForm.reset();</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.disabled = true;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.add('bg-gray-400', 'cursor-not-allowed');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+submitContactFormButton.classList.remove('bg-green-500', 'hover:bg-green-600');</span></p>
+
+<p class=MsoNormal><span lang=FR>            } catch (error) {</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+contactMessageStatus.textContent = &quot;Erreur lors de l'envoi du
+message.&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+contactMessageStatus.classList.remove('text-green-500');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+contactMessageStatus.classList.add('text-red-500');</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+adding contact submission:&quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+document.getElementById('back-from-contact-success').addEventListener('click',
+() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactSuccessSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainTitle.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Admin section logic</span></p>
+
+<p class=MsoNormal><span lang=FR>        adminLink.addEventListener('click',
+(e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            e.preventDefault();</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+courseSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactFormSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+contactSuccessSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminDashboardSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+backFromAdminButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainTitle.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        // Admin login logic</span></p>
+
+<p class=MsoNormal><span lang=FR>        adminForm.addEventListener('submit',
+(e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            e.preventDefault();</span></p>
+
+<p class=MsoNormal><span lang=FR>            const password =
+adminPasswordInput.value;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const correctPassword =
+&quot;NicolePD69&quot;; </span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (password === correctPassword)
+{</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminDashboardSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>                displayAdminDashboard();</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                adminMessageDiv.textContent =
+&quot;Mot de passe incorrect.&quot;;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminMessageDiv.classList.add('text-red-500');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminMessageDiv.classList.remove('text-green-500');</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminMessageDiv.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Admin Dashboard logic</span></p>
+
+<p class=MsoNormal><span lang=FR>        function displayAdminDashboard() {</span></p>
+
+<p class=MsoNormal><span lang=FR>            // Display comments tab by default</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.add('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.remove('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.remove('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.add('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminCommentsSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminTroublemakersSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            displayCommentsInAdmin();</span></p>
+
+<p class=MsoNormal><span lang=FR>            displayTroublemakersInAdmin();</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        function displayCommentsInAdmin() {</span></p>
+
+<p class=MsoNormal><span lang=FR>            adminCommentsList.innerHTML = '';</span></p>
+
+<p class=MsoNormal><span lang=FR>            </span></p>
+
+<p class=MsoNormal><span lang=FR>            if (allNotes.length === 0) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                adminCommentsList.innerHTML =
+'&lt;p class=&quot;text-center text-gray-500&quot;&gt;Aucun commentaire à
+afficher.&lt;/p&gt;';</span></p>
+
+<p class=MsoNormal><span lang=FR>                return;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            const groupedComments =
+allNotes.reduce((acc, note) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const key = `${note.level} -
+${note.courseTitle}`;</span></p>
+
+<p class=MsoNormal><span lang=FR>                if (!acc[key]) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    acc[key] = {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        level: note.level,</span></p>
+
+<p class=MsoNormal><span lang=FR>                        courseTitle:
+note.courseTitle,</span></p>
+
+<p class=MsoNormal><span lang=FR>                        comments: []</span></p>
+
+<p class=MsoNormal><span lang=FR>                    };</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>                acc[key].comments.push(note);</span></p>
+
+<p class=MsoNormal><span lang=FR>                return acc;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }, {});</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            for (const key in groupedComments)
+{</span></p>
+
+<p class=MsoNormal><span lang=FR>                const courseData =
+groupedComments[key];</span></p>
+
+<p class=MsoNormal><span lang=FR>                </span></p>
+
+<p class=MsoNormal><span lang=FR>                const courseGroup =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                courseGroup.className =
+'bg-gray-50 rounded-lg p-4 shadow-sm';</span></p>
+
+<p class=MsoNormal><span lang=FR>                courseGroup.innerHTML = `</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;h3 class=&quot;text-xl
+font-semibold text-gray-800 mb-4&quot;&gt;${courseData.level} -
+${courseData.courseTitle}&lt;/h3&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;div
+class=&quot;space-y-4&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                `;</span></p>
+
+<p class=MsoNormal><span lang=FR>                const commentsContainer =
+courseGroup.querySelector('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>                courseData.comments.sort((a,
+b) =&gt; b.createdAt - a.createdAt).forEach(comment =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    const commentElement =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                    commentElement.className =
+'bg-white rounded-xl p-4 shadow-md flex justify-between items-start';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    let colorClass =
+'text-green-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    if (comment.rating &gt;= 0
+&amp;&amp; comment.rating &lt;= 4) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        colorClass =
+'text-red-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    } else if (comment.rating
+&gt; 4 &amp;&amp; comment.rating &lt;= 7) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                        colorClass =
+'text-orange-500';</span></p>
+
+<p class=MsoNormal><span lang=FR>                    }</span></p>
+
+<p class=MsoNormal><span lang=FR>                    </span></p>
+
+<p class=MsoNormal><span lang=FR>                    commentElement.innerHTML =
+`</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;span
+class=&quot;font-semibold ${colorClass}&quot;&gt;Note: ${comment.rating} /
+10&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;p
+class=&quot;text-gray-700&quot;&gt;${comment.comment}&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            &lt;span
+class=&quot;text-xs text-gray-500&quot;&gt;ID utilisateur:
+${comment.userId.substring(0, 8)}...&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;button
+class=&quot;delete-comment-btn text-red-500 hover:text-red-700
+transition-colors duration-200&quot; data-id=&quot;${comment.id}&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                            Supprimer</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    `;</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+commentsContainer.appendChild(commentElement);</span></p>
+
+<p class=MsoNormal><span lang=FR>                });</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminCommentsList.appendChild(courseGroup);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        function displayTroublemakersInAdmin()
+{</span></p>
+
+<p class=MsoNormal><span lang=FR>            adminTroublemakersList.innerHTML =
+'';</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (allContactSubmissions.length
+=== 0) {</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminTroublemakersList.innerHTML = '&lt;p class=&quot;text-center
+text-gray-500&quot;&gt;Aucun message de contact à afficher.&lt;/p&gt;';</span></p>
+
+<p class=MsoNormal><span lang=FR>                return;</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>            allContactSubmissions.sort((a, b)
+=&gt; b.createdAt - a.createdAt).forEach(submission =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const submissionElement =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                submissionElement.className =
+'bg-white rounded-xl p-4 shadow-md flex justify-between items-start';</span></p>
+
+<p class=MsoNormal><span lang=FR>                submissionElement.innerHTML =
+`</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;h4
+class=&quot;font-bold text-gray-800&quot;&gt;${submission.topic}&lt;/h4&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;p
+class=&quot;text-gray-700 mt-1&quot;&gt;Message:
+${submission.message}&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        &lt;p
+class=&quot;text-gray-700 mt-1&quot;&gt;Email: ${submission.email}&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;button
+class=&quot;delete-submission-btn text-red-500 hover:text-red-700
+transition-colors duration-200&quot; data-id=&quot;${submission.id}&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                        Supprimer</span></p>
+
+<p class=MsoNormal><span lang=FR>                    &lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>                `;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+adminTroublemakersList.appendChild(submissionElement);</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>       
+showCommentsTab.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.add('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.remove('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.remove('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.add('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminCommentsSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminTroublemakersSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>       
+showTroublemakersTab.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.add('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showTroublemakersTab.classList.remove('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.remove('bg-green-500', 'text-white');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+showCommentsTab.classList.add('bg-gray-200', 'text-gray-800');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminTroublemakersSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminCommentsSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        async function
+deleteComment(commentId) {</span></p>
+
+<p class=MsoNormal><span lang=FR>            try {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const commentsCollectionPath =
+`artifacts/${appId}/public/data/comments`;</span></p>
+
+<p class=MsoNormal><span lang=FR>                await deleteDoc(doc(db,
+commentsCollectionPath, commentId));</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;Document
+successfully deleted!&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>            } catch (error) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+removing document: &quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>        async function
+deleteSubmission(submissionId) {</span></p>
+
+<p class=MsoNormal><span lang=FR>            try {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const contactCollectionPath =
+`artifacts/${appId}/public/data/contact_submissions`;</span></p>
+
+<p class=MsoNormal><span lang=FR>                await deleteDoc(doc(db,
+contactCollectionPath, submissionId));</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.log(&quot;Contact
+submission successfully deleted!&quot;);</span></p>
+
+<p class=MsoNormal><span lang=FR>            } catch (error) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                console.error(&quot;Error
+removing contact submission: &quot;, error);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+adminCommentsList.addEventListener('click', (e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            const deleteButton =
+e.target.closest('.delete-comment-btn');</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (deleteButton) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const commentId =
+deleteButton.dataset.id;</span></p>
+
+<p class=MsoNormal><span lang=FR>                deleteComment(commentId);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>        </span></p>
+
+<p class=MsoNormal><span lang=FR>       
+adminTroublemakersList.addEventListener('click', (e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>            const deleteButton =
+e.target.closest('.delete-submission-btn');</span></p>
+
+<p class=MsoNormal><span lang=FR>            if (deleteButton) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const submissionId =
+deleteButton.dataset.id;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+deleteSubmission(submissionId);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>       
+backFromAdminDashboardButton.addEventListener('click', () =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+adminDashboardSection.classList.add('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+levelSelectorSection.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+mainTitle.classList.remove('hidden');</span></p>
+
+<p class=MsoNormal><span lang=FR>        });</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // Initialize level buttons</span></p>
+
+<p class=MsoNormal><span lang=FR>        populateLevelButtons();</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        // --- Rating Scale Logic ---</span></p>
+
+<p class=MsoNormal><span lang=FR>        function createRatingScale() {</span></p>
+
+<p class=MsoNormal><span lang=FR>            for (let i = 1; i &lt;= 10; i++) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const point =
+document.createElement('div');</span></p>
+
+<p class=MsoNormal><span lang=FR>                point.className =
+'rating-point';</span></p>
+
+<p class=MsoNormal><span lang=FR>                point.textContent = i;</span></p>
+
+<p class=MsoNormal><span lang=FR>                point.dataset.value = i;</span></p>
+
+<p class=MsoNormal><span lang=FR>               
+ratingScale.appendChild(point);</span></p>
+
+<p class=MsoNormal><span lang=FR>            }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+ratingScale.addEventListener('click', (e) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                const target =
+e.target.closest('.rating-point');</span></p>
+
+<p class=MsoNormal><span lang=FR>                if (target) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                    selectedRating =
+parseInt(target.dataset.value, 10);</span></p>
+
+<p class=MsoNormal><span lang=FR>                    updateRatingScale();</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        function updateRatingScale() {</span></p>
+
+<p class=MsoNormal><span lang=FR>           
+document.querySelectorAll('.rating-point').forEach(point =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=FR>                if
+(parseInt(point.dataset.value, 10) &lt;= selectedRating) {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+point.classList.add('selected');</span></p>
+
+<p class=MsoNormal><span lang=FR>                } else {</span></p>
+
+<p class=MsoNormal><span lang=FR>                   
+point.classList.remove('selected');</span></p>
+
+<p class=MsoNormal><span lang=FR>                }</span></p>
+
+<p class=MsoNormal><span lang=FR>            });</span></p>
+
+<p class=MsoNormal><span lang=FR>        }</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>        createRatingScale();</span></p>
+
+<p class=MsoNormal><span lang=FR>    &lt;/script&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal><span lang=FR>&lt;/html&gt;</span></p>
+
+</div>
+
+</body>
+
+</html>
