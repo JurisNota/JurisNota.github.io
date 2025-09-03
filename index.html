@@ -82,9 +82,7 @@
                 <h2 id="main-title" class="text-3xl italic text-gray-800 mb-6">Sélectionnez votre année</h2>
                 
                 <div id="level-selector" class="flex flex-col items-center space-y-4 mb-8">
-                    <button class="level-button w-full bg-green-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg" data-level="L1">L1</button>
-                    <button class="level-button w-full bg-green-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg" data-level="L2">L2</button>
-                    <button class="level-button w-full bg-green-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg" data-level="L3">L3</button>
+                    <!-- Buttons will be populated by JS -->
                 </div>
             </section>
         </main>
@@ -460,22 +458,26 @@
                     dropdownList.appendChild(noCourseMessage);
                 }
 
-                levelButton.addEventListener('click', () => {
-                    // Hide all other dropdowns
-                    document.querySelectorAll('.course-list-dropdown').forEach(dd => {
-                        if (dd !== dropdownList) {
-                            dd.classList.add('hidden');
-                        }
-                    });
-                    // Toggle the current dropdown's visibility
-                    dropdownList.classList.toggle('hidden');
-                });
-
                 levelContainer.appendChild(levelButton);
                 levelContainer.appendChild(dropdownList);
                 levelSelector.appendChild(levelContainer);
             });
         }
+
+        levelSelector.addEventListener('click', (e) => {
+            const levelButton = e.target.closest('.level-button');
+            if (levelButton) {
+                const dropdown = levelButton.nextElementSibling;
+                // Hide all other dropdowns
+                document.querySelectorAll('.course-list-dropdown').forEach(dd => {
+                    if (dd !== dropdown) {
+                        dd.classList.add('hidden');
+                    }
+                });
+                // Toggle the current dropdown's visibility
+                dropdown.classList.toggle('hidden');
+            }
+        });
 
         function displayCourseDetails(level, title) {
             mainTitle.classList.add('hidden');
